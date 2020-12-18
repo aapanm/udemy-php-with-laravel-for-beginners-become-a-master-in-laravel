@@ -1,0 +1,13 @@
+routes/node_modules
+routes/public/hot
+routes/public/storage
+routes/storage/*.key
+routes/vendor
+routes/.env
+routes/.env.backup
+routes/.phpunit.result.cache
+routes/docker-compose.override.yml
+routes/Homestead.json
+routes/Homestead.yaml
+routes/npm-debug.log
+routes/yarn-error.log
