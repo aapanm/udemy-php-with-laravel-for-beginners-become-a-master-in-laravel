@@ -4,16 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PostsController extends Controller
+class RouteResourceController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($id)
+    public function index()
     {
-        return "here id is ".$id;
+        //
     }
 
     /**
@@ -45,7 +45,8 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        //
+        $url = route("user.show", $id);
+        return "this url is ".$url;
     }
 
     /**
