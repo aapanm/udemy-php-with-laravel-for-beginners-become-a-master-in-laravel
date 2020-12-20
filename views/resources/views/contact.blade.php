@@ -12,5 +12,5 @@
 @endsection
 
 @section('footer')
-    <h2>This is footer from contact</h2>
+    <h2>This is footert</h2>
 @endsection
