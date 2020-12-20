@@ -84,6 +84,7 @@ class ContactController extends Controller
 
     public function contact($name, $id)
     {
-        return view('contact', ['name'=> $name, 'id'=> $id]);
+        $people = ['a', 'b', 'c', 'd'];
+        return view('contact', ['name'=> $name, 'id'=> $id, 'people'=>$people]);
     }
 }

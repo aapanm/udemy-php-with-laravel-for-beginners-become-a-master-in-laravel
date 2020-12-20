@@ -1,13 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact</title>
-</head>
-<body>
-    <h1>Contact view</h1>
-    <p>{{ $name }} {{ $id }}</p>
-</body>
-</html>
+@extends('layout.app')
+
+@section('content')
+    <h1>Contact page</h1>
+    <p> {{ $name }} {{ $id }}</p>
+
+    @if (count($people))
+        @foreach ($people as $person)
+            <li>{{ $person }}</li>
+        @endforeach 
+    @endif
+@endsection
+
+@section('footer')
+    <h2>This is footer from contact</h2>
+@endsection
