@@ -41,3 +41,17 @@ views/Homestead.yaml
 views/npm-debug.log
 views/yarn-error.log
 
+db-migrations/node_modules
+db-migrations/public/hot
+db-migrations/public/storage
+db-migrations/storage/*.key
+db-migrations/vendor
+db-migrations/.env
+db-migrations/.env.backup
+db-migrations/.phpunit.result.cache
+db-migrations/docker-compose.override.yml
+db-migrations/Homestead.json
+db-migrations/Homestead.yaml
+db-migrations/npm-debug.log
+db-migrations/yarn-error.log
+
