@@ -55,3 +55,17 @@ db-migrations/Homestead.yaml
 db-migrations/npm-debug.log
 db-migrations/yarn-error.log
 
+raw-sql-query/node_modules
+raw-sql-query/public/hot
+raw-sql-query/public/storage
+raw-sql-query/storage/*.key
+raw-sql-query/vendor
+raw-sql-query/.env
+raw-sql-query/.env.backup
+raw-sql-query/.phpunit.result.cache
+raw-sql-query/docker-compose.override.yml
+raw-sql-query/Homestead.json
+raw-sql-query/Homestead.yaml
+raw-sql-query/npm-debug.log
+raw-sql-query/yarn-error.log
+
