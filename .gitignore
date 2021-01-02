@@ -69,3 +69,17 @@ raw-sql-query/Homestead.yaml
 raw-sql-query/npm-debug.log
 raw-sql-query/yarn-error.log
 
+eloquent-orm/node_modules
+eloquent-orm/public/hot
+eloquent-orm/public/storage
+eloquent-orm/storage/*.key
+eloquent-orm/vendor
+eloquent-orm/.env
+eloquent-orm/.env.backup
+eloquent-orm/.phpunit.result.cache
+eloquent-orm/docker-compose.override.yml
+eloquent-orm/Homestead.json
+eloquent-orm/Homestead.yaml
+eloquent-orm/npm-debug.log
+eloquent-orm/yarn-error.log
+
