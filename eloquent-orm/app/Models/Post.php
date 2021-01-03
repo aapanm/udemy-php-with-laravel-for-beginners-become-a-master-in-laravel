@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Post extends Model
 {
@@ -13,6 +14,9 @@ class Post extends Model
     //have to be declared assigning value to as same as mode name, in this case 'protected $table = "posts"'
     //same also goes for primary key, if you decide to use different column as a primary key rather than 'id'  
 
+    use SoftDeletes;
+
+    protected $dates = ['deleted_at'];
 
     protected $fillable = [
         "title",

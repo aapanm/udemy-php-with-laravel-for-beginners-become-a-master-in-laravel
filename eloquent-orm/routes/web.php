@@ -75,3 +75,44 @@ Route::get('/update', function () {
         "title"=>"this is title updated with orm"
     ]);
 });
+
+Route::get('/delete/{id}', function ($id) {
+    $post = Post::where('id', $id);
+    $post->delete();
+
+    // Post::destroy($id);
+    // Post::destroy([2,4]); => Multiple deletion
+    // Post::where('is_admin', 0); => Multiple deletion
+    
+    return true;
+});
+
+Route::get('/softdelete/{id}', function ($id) {
+    Post::find($id)->delete();
+});
+
+Route::get('/retrieveall', function () {
+    $post = Post::onlyTrashed()->get(); //get all deleted items
+    return $post;
+});
+
+Route::get('/retrieve/{id}', function ($id) {
+    $post = Post::withTrashed()->where('id', $id)->get();
+    return $post;
+});
+
+Route::get('/restore/{id}', function ($id) {
+    Post::withTrashed()->where('id', $id)->restore();
+});
+
+Route::get('/restoreall', function () {
+    Post::onlyTrashed()->restore();
+});
+
+Route::get('/forcedelete/{id}', function ($id) {
+    Post::withTrashed()->where('id', $id)->forceDelete();
+});
+
+Route::get('/forcedeleteall', function () {
+    Post::onlyTrashed()->forceDelete();
+});
