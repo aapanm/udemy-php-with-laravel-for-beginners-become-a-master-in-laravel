@@ -83,3 +83,17 @@ eloquent-orm/Homestead.yaml
 eloquent-orm/npm-debug.log
 eloquent-orm/yarn-error.log
 
+eloquent-relatioships/node_modules
+eloquent-relatioships/public/hot
+eloquent-relatioships/public/storage
+eloquent-relatioships/storage/*.key
+eloquent-relatioships/vendor
+eloquent-relatioships/.env
+eloquent-relatioships/.env.backup
+eloquent-relatioships/.phpunit.result.cache
+eloquent-relatioships/docker-compose.override.yml
+eloquent-relatioships/Homestead.json
+eloquent-relatioships/Homestead.yaml
+eloquent-relatioships/npm-debug.log
+eloquent-relatioships/yarn-error.log
+
