@@ -97,3 +97,17 @@ eloquent-relatioships/Homestead.yaml
 eloquent-relatioships/npm-debug.log
 eloquent-relatioships/yarn-error.log
 
+tinker/node_modules
+tinker/public/hot
+tinker/public/storage
+tinker/storage/*.key
+tinker/vendor
+tinker/.env
+tinker/.env.backup
+tinker/.phpunit.result.cache
+tinker/docker-compose.override.yml
+tinker/Homestead.json
+tinker/Homestead.yaml
+tinker/npm-debug.log
+tinker/yarn-error.log
+
